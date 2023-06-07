@@ -1,0 +1,195 @@
+/* Home Page */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: beige;
+}
+
+.front {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  color: beige;
+}
+
+.clickable-img {
+  max-width: 200px;
+  margin-left: 170px;
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.clickable-img {
+  transition: transform 0.3s;
+}
+
+.clickable-img:hover {
+  transform: scale(1.1);
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.dev-name {
+  animation: slide-in 1s ease-out;
+}
+
+/* About Page */
+
+#about {
+  text-align: center;
+  padding: 20px;
+  padding-top: 100px;
+}
+
+.line {
+  border-top: 1px solid black;
+  margin: 20px auto;
+  width: 40%;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.image-container img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+/* Styles for the slider */
+.slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide {
+  width: 100%;
+  display: none;
+}
+
+.content {
+  background-color: black;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  color: beige;
+}
+
+/* Styles for the active slide */
+.slide.active {
+  display: block;
+}
+
+/* Styles for the quote and author */
+.quote {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.author {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Animation for sliding effect */
+@keyframes slideAnimation {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+/* Contact us page */
+
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contact-info .icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-info .icon i {
+  font-size: 20px;
+}
+
+.contact-info .info h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.contact-info .info p {
+  margin: 0;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: black;
+  color: beige;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: beige;
+  color: black;
+}
+
+/* footer */
+
+.footer {
+  background-color: black;
+  padding: 20px 0;
+  text-align: center;
+  color: beige;
+}
