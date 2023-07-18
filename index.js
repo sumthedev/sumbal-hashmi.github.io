@@ -43,7 +43,7 @@ function handleHireMeClick() {
 
 function handleDownloadCvClick() {
   // Replace 'cv.pdf' with the actual filename and path of your CV
-  const cvUrl = "assets/sumbalCV.pdf";
+  const cvUrl = "assets/sumbal-cv.pdf";
   window.location.href = cvUrl;
 }
 
